@@ -23,7 +23,7 @@ Klient prowadzi staromodną wypożyczalnię, w której można wypożyczać:
   
 - filmy opisane przez:
     - reżysera
-    - tutuł
+    - tytuł
     - gatunek
     - czas trwania
     - ID w wypożyczalni
@@ -37,7 +37,7 @@ Klient prowadzi staromodną wypożyczalnię, w której można wypożyczać:
     - ID w wypożyczalni
     
 Aplikacja ma dostarczać funkcjonalność umożliwiającą zalogowanym użytkownikom pełną edycję
-posiadanych elementów do wypożycznia. 
+posiadanych elementów do wypożyczenia. 
 Edycja powinna zapewniać następujące reguły poprawności:
 - książki:
     - wszystkie ISBN są różne
@@ -49,24 +49,24 @@ Edycja powinna zapewniać następujące reguły poprawności:
     
 - płyty CD:
     - w ramach jednego gatunku nie możemy oferować dwóch płyt o tej samej liście utworów
-    - płyty danogo zespółu mogą być oferowane tylko w dwóch gatunkach
+    - płyty danego zespołu mogą być oferowane tylko w dwóch gatunkach
     
 Aplikacja przechowuje liczby poszczególnych elementów do wypożyczania oraz dane wypożyczających i 
 ich dane o wypożyczeniach i zwrotach wypożyczanych elementów.
 
 Aplikacja powinna również oferować statystyki wypożyczeń w zadanych odcinkach czasu:
 - popularność książek, filmów i płyt w podziale na gatunki
-- jednolity ranking wypożyczających w podziale na rodzaj i gatunek wypożyczanego elemety.
+- jednolity ranking wypożyczających w podziale na rodzaj i gatunek wypożyczanego elementy.
 
 ### Ograniczenia techniczne
 1. Dane aplikacji powinny być utrwalane w bazie danych.
 1. Wykorzystać mechanizm migracji bazy danych.
 1. Aplikacja powinna być wytworzona w technologii Django z wykorzystaniem *Class-based views*.
 1. Operacje powinny realizować pełen CRUD na danych programu.
-1. Aplikacja (prócz panelu administratora) powinna udostępniać logowanie użytkowsników.
+1. Aplikacja (prócz panelu administratora) powinna udostępniać logowanie użytkowników.
 
 ### Punktacja
 - **[10 punktów]** Modele danych, ich walidacja i mechanizm migracji danych.
-- **[20 punktów]** CRUD adekwatny do treści zadania wykorzystujący *Class-based views*.
-- **[10 punktów]** Logowanie i uprawnienia użytkowaników do widoków.
-
+- **[15 punktów]** CRUD adekwatny do treści zadania wykorzystujący *Class-based views*.
+- **[10 punktów]** Logowanie i uprawnienia użytkowników do widoków.
+- **[5 punktów]** Prezentacja statystyk.
