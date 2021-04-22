@@ -12,7 +12,7 @@ Przekroczenie terminu o **n** zajęć wiąże się z karą:
 Bazując na [tutorialu do Django](https://docs.djangoproject.com/pl/3.2/intro/tutorial01/), 
 napisać własną aplikację web spełniającą następujące warunki:
 
-###Specyfikacja wymagań klienta
+### Specyfikacja wymagań klienta
 Klient prowadzi staromodną wypożyczalnię, w której można wypożyczać:
 - książki opisane przez:
     - autora
@@ -58,14 +58,14 @@ Aplikacja powinna również oferować statystyki wypożyczeń w zadanych odcinka
 - popularność książek, filmów i płyt w podziale na gatunki
 - jednolity ranking wypożyczających w podziale na rodzaj i gatunek wypożyczanego elemety.
 
-###Ograniczenia techniczne
+### Ograniczenia techniczne
 1. Dane aplikacji powinny być utrwalane w bazie danych.
 1. Wykorzystać mechanizm migracji bazy danych.
 1. Aplikacja powinna być wytworzona w technologii Django z wykorzystaniem *Class-based views*.
 1. Operacje powinny realizować pełen CRUD na danych programu.
 1. Aplikacja (prócz panelu administratora) powinna udostępniać logowanie użytkowsników.
 
-###Punktacja
+### Punktacja
 - **[10 punktów]** Modele danych, ich walidacja i mechanizm migracji danych.
 - **[20 punktów]** CRUD adekwatny do treści zadania wykorzystujący *Class-based views*.
 - **[10 punktów]** Logowanie i uprawnienia użytkowaników do widoków.
