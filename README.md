@@ -37,9 +37,9 @@ Klient prowadzi staromodną sieć wypożyczalni, w której można wypożyczać:
     - ID w wypożyczalni
 
 Wypożyczalnie posiadają:
-    - ID
-    - nazwę
-    - adres
+- ID
+- nazwę
+- adres
 
 Aplikacja ma dostarczać funkcjonalność umożliwiającą zalogowanym użytkownikom pełną edycję
 posiadanych elementów do wypożyczenia. 
