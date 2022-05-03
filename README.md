@@ -2,19 +2,19 @@
 
 | Termin oddania | Punkty     |
 |----------------|:-----------|
-|    12.06.2021 23:00 |   40        |
+|    12.06.2021 23:00 |   30        |
 
 --- 
 Przekroczenie terminu o **n** zajęć wiąże się z karą:
 - punkty uzyskania za realizację zadania są dzielone przez **2<sup>n</sup>**.
 
 --- 
-Bazując na [tutorialu do Django](https://docs.djangoproject.com/pl/3.2/intro/tutorial01/), 
+Bazując na [tutorialu do Django](https://docs.djangoproject.com/pl/4.0/intro/tutorial01/), 
 napisać własną aplikację web spełniającą następujące warunki:
 
 ### Specyfikacja wymagań klienta
-Klient prowadzi staromodną wypożyczalnię, w której można wypożyczać:
-- książki opisane przez:
+Klient prowadzi staromodną sieć wypożyczalni, w której można wypożyczać:
+- książki charakteryzowane przez:
     - autora
     - tytuł
     - gatunek
@@ -35,13 +35,18 @@ Klient prowadzi staromodną wypożyczalnię, w której można wypożyczać:
     - lista utworów
     - czas trwania
     - ID w wypożyczalni
-    
+
+Wypożyczalnie posiadają:
+    - ID
+    - nazwę
+    - adres
+
 Aplikacja ma dostarczać funkcjonalność umożliwiającą zalogowanym użytkownikom pełną edycję
 posiadanych elementów do wypożyczenia. 
 Edycja powinna zapewniać następujące reguły poprawności:
 - książki:
     - wszystkie ISBN są różne
-    - autor, tytuł i gatunek nie mogą się powtarzać
+    - krotki: (autor, tytuł i gatunek)  nie mogą się powtarzać
   
 - filmy:
     - liczby różnych filmów danego gatunku w ramach całej kolekcji mogą różnić się o 3
@@ -63,10 +68,10 @@ Aplikacja powinna również oferować statystyki wypożyczeń w zadanych odcinka
 1. Wykorzystać mechanizm migracji bazy danych.
 1. Aplikacja powinna być wytworzona w technologii Django z wykorzystaniem *Class-based views*.
 1. Operacje powinny realizować pełen CRUD na danych programu.
-1. Aplikacja (prócz panelu administratora) powinna udostępniać logowanie użytkowników.
+1. Aplikacja (prócz panelu administratora) powinna udostępniać logowanie użytkowników w apliokacji.
 
 ### Punktacja
 - **[10 punktów]** Modele danych, ich walidacja i mechanizm migracji danych.
-- **[15 punktów]** CRUD adekwatny do treści zadania wykorzystujący *Class-based views*.
-- **[10 punktów]** Logowanie i uprawnienia użytkowników do widoków.
+- **[10 punktów]** CRUD adekwatny do treści zadania wykorzystujący *Class-based views*.
+- **[5 punktów]** Logowanie i uprawnienia użytkowników do widoków.
 - **[5 punktów]** Prezentacja statystyk.
